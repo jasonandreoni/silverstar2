@@ -1,0 +1,95 @@
+<!--Breadcrumb Section-->
+<script src="assets/js/helper.js"></script>
+<section id="breadcrumb-section" data-bg-img="/WebTemplates/[websiteuserid]/assets/img/breadcrumb.jpg">
+	<div class="inner-container container">
+		<div class="ravis-title">
+			<div class="inner-box">
+				<div class="title">Contact Us</div>
+			</div>
+		</div>
+		<div class="breadcrumb">
+			<ul class="list-inline">
+				<li><a href="../index.html">Home</a></li>
+				<li class="current"><a href="#">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+</section>
+<!--End of Breadcrumb Section-->
+<!--Contact Section-->
+<section id="contact-section">
+	<div class="inner-container container">
+		<div class="t-sec">
+			<div class="ravis-title-t-2">
+				<h2>Contact Us</h2>
+			<div class="content">
+				At Silverstar Luxury Rentals, we strive to offer the best guest experience in Telluride and starts the moment you call us. Our representatives are here to help you choose the perfect vacation home or townhouse for your next vacation, help make any last-minute reservations and ultimately make sure your stay is one you will remember for a lifetime. Call at <strong>(970) 728-3001</strong> or fill out the form below to reach us online and we’ll respond as quickly as possible.
+			</div>
+
+			<div class="contact-info">
+				<div class="contact-inf-box">
+					<div class="icon-box">
+						<i class="fa fa-home"></i>
+					</div>
+					<div class="text">
+						624 Mountain Village Blvd., Mountain Vilage, CO 81435
+					</div>
+				</div>
+				<!--<div class="contact-inf-box">
+					<div class="icon-box">
+						<i class="fa fa-envelope"></i>
+					</div>
+					<div class="text">
+						info@colosseum.com
+					</div>
+				</div>-->
+				<div class="contact-inf-box">
+					<div class="icon-box">
+						<i class="fa fa-phone"></i>
+					</div>
+					<div class="text">
+						P: 970-728-3001
+					</div>
+				</div>
+				<div class="contact-inf-box">
+					<div class="icon-box">
+						<i class="fa fa-phone"></i>
+					</div>
+					<div class="text">
+						F: 970-728-6226
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="b-sec clearfix">
+			<div id="inputBox1"></div>
+			<div class="contact-form col-md-12">
+				<div class="field-row">
+					<input id="name" required="" type="text" placeholder="Name :" value="" />
+				</div>
+				<div class="field-row">
+					<input id="phone" type="text" placeholder="Phone :" value="" />
+				</div>
+				<div class="field-row">
+					<input id="email" required="" type="email" placeholder="Email :" value="" />
+				</div>
+				<div class="field-row">
+					<textarea id="msg" required="" placeholder="Your Message :">Your Message :</textarea>
+				</div>
+				<div class="field-row">
+					<input class="submitbtn" id="send" type="submit" value="Submit" />
+				</div>
+			</div>
+			<div class="col-md-6" id="google-map" data-marker="/WebTemplates/[websiteuserid]/assets/img/marker.png">
+			</div>
+		</div>
+	</div>
+</section>
+<iframe id="contactIframe" src="/contactus.aspx" style="width: 100%; height: 0px; opacity: 0;"></iframe>
+<script src="WebTemplates/[websiteuserid]/assets/js/contactform.js" type="text/javascript" rel="script"></script>
+<!--End of Contact Section-->
+<style type="text/css">
+	#table8 tbody tr td table:nth-of-type(1) tbody > tr:nth-child(3) {
+		display: none;
+	}
+</style>

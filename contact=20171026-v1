@@ -1,0 +1,98 @@
+<!--Breadcrumb Section-->
+<script src="assets/js/helper.js"></script>
+<section id="breadcrumb-section" data-bg-img="/WebTemplates/[websiteuserid]/assets/img/breadcrumb.jpg">
+	<div class="inner-container container">
+		<div class="ravis-title">
+			<div class="inner-box">
+				<div class="title">Contact Us</div>
+				<div class="sub-title">Some description about your hotel</div>
+			</div>
+		</div>
+		<div class="breadcrumb">
+			<ul class="list-inline">
+				<li><a href="../index.html">Home</a></li>
+				<li class="current"><a href="#">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+</section>
+<!--End of Breadcrumb Section-->
+<!--Contact Section-->
+<section id="contact-section">
+	<div class="inner-container container">
+		<div class="t-sec">
+			<div class="ravis-title-t-2">
+				<div class="title"><span>Contact Us</span></div>
+				<div class="sub-title">Do not hesitate to contact me if you have any further questions</div>
+			</div>
+			<div class="content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+				labore
+				et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+				ut
+				aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+				sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis
+				iste
+				natus error sit voluptatem accusantium doloremque.
+			</div>
+
+			<div class="contact-info">
+				<div class="contact-inf-box">
+					<div class="icon-box">
+						<i class="fa fa-home"></i>
+					</div>
+					<div class="text">
+						1011 Kevin James Street, San Diego, CA 92101
+					</div>
+				</div>
+				<div class="contact-inf-box">
+					<div class="icon-box">
+						<i class="fa fa-envelope"></i>
+					</div>
+					<div class="text">
+						info@colosseum.com
+					</div>
+				</div>
+				<div class="contact-inf-box">
+					<div class="icon-box">
+						<i class="fa fa-phone"></i>
+					</div>
+					<div class="text">
+						(012) 345-6789
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="b-sec clearfix">
+			<div id="inputBox1"></div>
+			<div class="contact-form col-md-12">
+				<div class="field-row">
+					<input id="name" required="" type="text" placeholder="Name :" value="" />
+				</div>
+				<div class="field-row">
+					<input id="phone" type="text" placeholder="Phone :" value="" />
+				</div>
+				<div class="field-row">
+					<input id="email" required="" type="email" placeholder="Email :" value="" />
+				</div>
+				<div class="field-row">
+					<textarea id="msg" required="" placeholder="Your Message :">Your Message :</textarea>
+				</div>
+				<div class="field-row">
+					<input class="submitbtn" id="send" type="submit" value="Submit" />
+				</div>
+			</div>
+			<div class="col-md-6" id="google-map" data-marker="/WebTemplates/[websiteuserid]/assets/img/marker.png">
+			</div>
+		</div>
+	</div>
+</section>
+<iframe id="contactIframe" src="/contactus.aspx" style="width: 100%; height: 0px; opacity: 0;"></iframe>
+<script src="WebTemplates/[websiteuserid]/assets/js/contactform.js" type="text/javascript" rel="script"></script>
+<!--End of Contact Section-->
+<style type="text/css">
+	#table8 tbody tr td table:nth-of-type(1) tbody > tr:nth-child(3) {
+		display: none;
+	}
+</style>
