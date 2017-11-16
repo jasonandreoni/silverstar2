@@ -1,0 +1,461 @@
+<div class="slider-available-sec">
+    <!-- Main Slider -->
+    <section id="main-slider">
+        <div class="items">
+            <div class="img-container" data-bg-img="/WebTemplates/[websiteuserid]/assets/img/slider/1.jpg"></div>
+            <!-- Change the URL section based on your image\'s name -->
+            <div class="slide-caption">
+                <div class="inner-container clearfix">
+                    <div class="up-sec">Its's not just vacation.</div>
+                    <div class="down-sec">It's a Lifestyle</div>
+                </div>
+            </div>
+        </div>
+        <div class="items">
+            <div class="img-container" data-bg-img="/WebTemplates/[websiteuserid]/assets/img/slider/2.jpg"></div>
+            <div class="slide-caption">
+                <div class="inner-container clearfix">
+                    <div class="up-sec">Relax with your friends and family</div>
+                    <div class="down-sec">around a warm fire</div>
+                </div>
+            </div>
+        </div>
+        <div class="items">
+            <div class="img-container" data-bg-img="/WebTemplates/[websiteuserid]/assets/img/slider/4.jpg"></div>
+            <div class="slide-caption">
+                <div class="inner-container clearfix">
+                    <div class="up-sec">Get out there and earn your</div>
+                    <div class="down-sec">Hot Cocoa</div>
+                </div>
+            </div>
+        </div>
+        <div class="items">
+            <div class="img-container" data-bg-img="/WebTemplates/[websiteuserid]/assets/img/slider/3.jpg"></div>
+            <div class="slide-caption">
+                <div class="inner-container clearfix">
+                    <div class="up-sec">Enjoy your outdoor deck with</div>
+                    <div class="down-sec">Mountain Views</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Main Slider -->
+    <!--Main Booking form-->
+    <section id="main-availability-form">
+        <div class="inner-container container">
+            <div class="l-sec col-md-4">
+                <div class="ravis-title">
+                    <div class="inner-box">
+                        <div class="title">Plan Your</div>
+                        <div class="sub-title">Telluride Vacation</div>
+                    </div>
+                </div>
+            </div>
+            <div class="r-sec col-md-8">
+                <div class="booking-form clearfix form">
+                    <!-- Do Not remove the classes -->
+                    <div class="col-md-10">
+                        <div class="input-daterange row">
+                            <div class="booking-fields col-md-6">
+                                <input name="start" class="datepicker-fields check-in DateFrom" type="text" readonly="readonly" placeholder="Arrival Date" value="" />
+                                <!-- Date Picker field ( Do Not remove the "datepicker-fields" class ) -->
+                                <i class="fa fa-calendar"></i><!-- Date Picker Icon -->
+                            </div>
+                            <div class="booking-fields col-md-6">
+                                <input name="end" class="datepicker-fields check-out DateTo" type="text" readonly="readonly" placeholder="Departure Date" value="" />
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="booking-fields col-md-6">
+                                <!-- Select boxes ( you can change the items and its value based on your project's needs ) -->
+                                <select name="room-type" class="locationID">
+                                    <option value="" />Location
+                                    <!-- Select box items ( you can change the items and its value based on your project's needs ) -->
+                                    [locationlist]
+                                </select>
+                                <!-- End of Select boxes -->
+                            </div>
+                            <div class="booking-fields col-md-6">
+                                <select name="guest" class="Sleeps">
+                                    <option value="" />Occupancy
+                                    <option value="1" />1
+                                    <option value="2" />2
+                                    <option value="3" />3
+                                    <option value="4" />4
+                                    <option value="5" />5
+                                    <option value="6" />6
+                                    <option value="7" />7
+                                    <option value="8" />8
+                                    <option value="9" />9
+                                    <option value="10" />10
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="ravis-btn btn-type-1" onclick="smit()" type="submit">
+                            <span class="inner-box">
+                                Search
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End of Main Booking form-->
+</div>
+<!--Welcome Section-->
+<!--<section id="welcome-section">
+    <div class="inner-container container">
+        <div class="l-sec col-md-7">
+            <div class="ravis-title-t-1">
+                <div class="title"><span>Colosseum Hotel</span></div>
+                <div class="sub-title">We provide the most luxurious services</div>
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim esse id illo laboriosam magnam
+                odio quis, suscipit voluptatibus. Doloremque expedita hic ipsam iusto natus neque quidem. Culpa
+                earum eum, harum hic molestiae nemo quod ut! Adipisci aliquid asperiores commodi, cumque, dolor
+                dolore dolores dolorum eaque exercitationem fugit harum hic id molestias natus nesciunt nisi
+                odio pariatur perferendis placeat reiciendis repudiandae sed sequi sint unde vero? Ad
+                architecto, dolore est exercitationem iusto laudantium nihil odit possimus qui quibusdam saepe
+                vero voluptatem.
+            </div>
+            <a class="ravis-btn btn-type-2" href="/aboutus.aspx">About Us</a>
+        </div>
+        <div class="r-sec col-md-5">
+            <img alt="Colosseum Hotel" src="/WebTemplates/[websiteuserid]/assets/img/welcome.jpg" />
+        </div>
+    </div>
+</section>-->
+<!--End of Welcome Section-->
+<!--Luxury Room Section-->
+<section class="clearfix" id="luxury-rooms">
+    [fp1][fp2][fp3][fp4]
+</section>
+<!--End of Luxury Room Section-->
+<!-- Upcoming Events -->
+<!--<section id="upcoming-events">
+    <div class="inner-container container">
+        <div class="ravis-title">
+            <div class="inner-box">
+                <div class="title">Popular Locations</div>
+                <div class="sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+        </div>
+        <div class="event-container">
+            <ul class="event-main-box clearfix">
+                <li class="item col-xs-6 col-md-4">
+                    <figure>
+                        <a class="more-details" href="#">
+                            <img alt="11" src="/WebTemplates/[websiteuserid]/assets/img/events/1.jpg" />
+                        </a>
+                        <figcaption>
+                            <a href="#">
+                                <span class="title-box">
+                                    <span class="title">Fiji</span>
+                                    <span class="sub-title">By : Luxury Jewelery Institute</span>
+                                </span>
+                                <span class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </span>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="item col-xs-6 col-md-8">
+                    <figure>
+                        <a class="more-details" href="#">
+                            <img alt="11" src="/WebTemplates/[websiteuserid]/assets/img/events/4.jpg" />
+                        </a>
+                        <figcaption>
+                            <a href="#">
+                                <span class="title-box">
+                                    <span class="title">Bora Bora</span>
+                                    <span class="sub-title">Designer : John Doe</span>
+                                </span>
+                                <span class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dicta, dolorem laborum quam qui temporibus?
+                                </span>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="item col-xs-6 col-md-4">
+                    <figure>
+                        <a class="more-details" href="#">
+                            <img alt="11" src="/WebTemplates/[websiteuserid]/assets/img/events/2.jpg" />
+                        </a>
+                        <figcaption>
+                            <a href="#">
+                                <span class="title-box">
+                                    <span class="title">Thailand</span>
+                                    <span class="sub-title">Presenter : Jack Rush</span>
+                                </span>
+                                <span class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </span>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="item col-xs-6 col-md-8">
+                    <figure>
+                        <a class="more-details" href="#">
+                            <img alt="11" src="/WebTemplates/[websiteuserid]/assets/img/events/5.jpg" />
+                        </a>
+                        <figcaption>
+                            <a href="#">
+                                <span class="title-box">
+                                    <span class="title">Cannes</span>
+                                    <span class="sub-title">By : Management Academy</span>
+                                </span>
+                                <span class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dicta, dolorem laborum quam qui temporibus?
+                                </span>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="item col-xs-6 col-md-4">
+                    <figure>
+                        <a class="more-details" href="#">
+                            <img alt="11" src="/WebTemplates/[websiteuserid]/assets/img/events/3.jpg" />
+                        </a>
+                        <figcaption>
+                            <a href="#">
+                                <span class="title-box">
+                                    <span class="title">Dubai</span>
+                                    <span class="sub-title">Singer : Elton John</span>
+                                </span>
+                                <span class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </span>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <a class="gallery-more-btn ravis-btn btn-type-2" href="/search.apx">More ...</a>
+        </div>
+    </div>
+</section>-->
+<!-- End of Upcoming Events -->
+<!-- Hotel Sections -->
+<section id="hotel-sections">
+    <div class="section-row clearfix">
+        <div class="desc animated-box" data-animation="fadeInUp" data-delay="400">
+            <div class="ravis-title-t-1">
+                <div class="title"><span>SilverStar’s Commitment To Excellence</span></div>
+            </div>
+            <div class="content">
+                From a hands-on, personalized booking experience to enjoying our luxurious vacation properties, our knowledgeable staff offers the best customer service possible for our guests. When you enlist SilverStar Luxury Properties’ vacation rental services, our team is committed to providing excellent communication and services to vacation homeowners and visitors alike.
+            </div>
+        </div>
+        <div class="img-container animated-box" data-bg-img="/WebTemplates/[websiteuserid]/assets/img/hotel-section/1.jpg" data-animation="fadeInUp"></div>
+    </div>
+    <div class="section-row clearfix">
+        <div class="img-container animated-box" data-bg-img="/WebTemplates/[websiteuserid]/assets/img/hotel-section/DSC05489.jpg" data-animation="fadeInUp"></div>
+        <div class="desc animated-box" data-animation="fadeInUp" data-delay="400">
+            <div class="ravis-title-t-1">
+                <div class="title"><span>An Amazing Getaway</span></div>
+            </div>
+            <div class="content">
+                Whether you are visiting us to experience one of Colorado’s world-class ski resorts, or visiting to attend one of Telluride’s renowned summer festivals, we will find you the perfect vacation property to suit your needs. We manage secluded vacation homes in Mountain Village, penthouse units within The Peaks Resort, and in-town homes within walking distance of Telluride’s dining and shopping scene.
+            </div>
+        </div>
+    </div>
+    <div class="section-row clearfix">
+        <div class="desc animated-box" data-animation="fadeInUp" data-delay="400">
+            <div class="ravis-title-t-1">
+                <div class="title"><span>Knowledgeable Concierge Services</span></div>
+            </div>
+            <div class="content">
+                From the moment you book your reservation, we will work hard to make sure your trip is nothing short of amazing. All of our properties are fully stocked with amenities to make your vacation rental feel like home. We can assist with transportation to and from Telluride’s airport, grocery shopping, and spa recommendations.
+            </div>
+        </div>
+        <div class="img-container animated-box" data-bg-img="/WebTemplates/[websiteuserid]/assets/img/hotel-section/3.jpg" data-animation="fadeInUp"></div>
+    </div>
+</section>
+<section id="concierge"></section>
+<!--Luxury Room Section-->
+        <section class="clearfix" id="luxury-rooms">
+            <div class="room-boxes col-sm-6 col-md-3">
+                <a class="inner-container" href="#!" data-bg-img="/WebTemplates/[websiteuserid]/assets/img/Spa-Services.jpg">
+                    <span class="ravis-title">
+                        <span class="inner-box">
+                            <span class="title">Spa Services</span>
+                        </span>
+                    </span>
+                </a>
+            </div>
+            <div class="room-boxes col-sm-6 col-md-3">
+                <a class="inner-container" href="#!" data-bg-img="/WebTemplates/[websiteuserid]/assets/img/Activities.jpg">
+                    <span class="ravis-title">
+                        <span class="inner-box">
+                            <span class="title">Activities</span>
+                        </span>
+                    </span>
+                </a>
+            </div>
+            <div class="room-boxes col-sm-6 col-md-3">
+                <a class="inner-container" href="#!" data-bg-img="/WebTemplates/[websiteuserid]/assets/img/Groceries.jpg">
+                    <span class="ravis-title">
+                        <span class="inner-box">
+                            <span class="title">Grocieries</span>
+                        </span>
+                    </span>
+                </a>
+            </div>
+            <div class="room-boxes col-sm-6 col-md-3">
+                <a class="inner-container" href="#!" data-bg-img="/WebTemplates/[websiteuserid]/assets/img/Transportation.jpg" "="">
+                    <span class="ravis-title">
+                        <span class="inner-box">
+                            <span class="title">Transportation</span>
+                        </span>
+                    </span>
+                </a>
+            </div>
+        </section>
+        <!--End of Luxury Room Section-->
+        
+<!-- End of Hotel Sections -->
+<!-- Video Tour -->
+<!--<section id="video-tour" data-bg-img="/WebTemplates/[websiteuserid]/assets/img/video.jpg">
+    <div class="inner-container container">
+        <div class="row">
+            <div class="l-sec col-md-6">
+                <div class="ravis-title">
+                    <div class="inner-box">
+                        <div class="title">Video Tour</div>
+                        <div class="sub-title">Watch the video to find out more about our services</div>
+                    </div>
+                </div>
+            </div>
+            <div class="r-sec col-md-6">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores facilis nulla repellat
+                rerum veniam vitae, voluptatem? Ex harum incidunt magni minima natus, quaerat quis. Eum modi
+                neque quae sequi temporibus!
+            </div>
+        </div>
+        <div class="row btn-box">
+            <a class="play-btn video-url" href="http://www.youtube.com/watch?v=f77SKdyn-1Y">
+                <i class="fa fa-play"></i>
+            </a>
+        </div>
+    </div>
+</section>-->
+<!-- End of Video Tour -->
+<!-- Special Offers -->
+<!--<section id="special-offers">
+    <div class="inner-container container">
+        <div class="ravis-title">
+            <div class="inner-box">
+                <div class="title">Special Offers</div>
+                <div class="sub-title">Choose the best package from the below</div>
+            </div>
+        </div>
+        <div class="packages-container clearfix">
+            <div class="package-box col-md-4">
+                <div class="main-inner-box" data-bg-img="/WebTemplates/[websiteuserid]/assets/img/packages/1.jpg">
+                    <div class="title-box">
+                        <div class="title">Silver</div>
+                        <div class="sub-title">Economy Package</div>
+                    </div>
+                    <div class="price-box">
+                        <div class="price">$300</div>
+                        <div class="type">Per Night</div>
+                    </div>
+                    <div class="detail-box">
+                        <ul>
+                            <li>
+                                <div class="inner-box">Flight Ticket</div>
+                            </li>
+                            <li>
+                                <div class="inner-box">Restaurant ( Lunch )</div>
+                            </li>
+                            <li>
+                                <div class="inner-box">Music Concert ( 30% Off )</div>
+                            </li>
+                            <li>
+                                <div class="inner-box">Airport Pick-up</div>
+                            </li>
+                            <li>
+                                <div class="inner-box">Sport Activities</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="ravis-btn btn-type-2" href="#">Select</a>
+                </div>
+            </div>
+            <div class="package-box col-md-4">
+                <div class="main-inner-box" data-bg-img="/WebTemplates/[websiteuserid]/assets/img/packages/2.jpg">
+                    <div class="title-box">
+                        <div class="title">Gold</div>
+                        <div class="sub-title">Business package</div>
+                    </div>
+                    <div class="price-box">
+                        <div class="price">$450</div>
+                        <div class="type">Per Night</div>
+                    </div>
+                    <div class="detail-box">
+                        <ul>
+                            <li>
+                                <div class="inner-box">Flight Ticket</div>
+                            </li>
+                            <li>
+                                <div class="inner-box">Restaurant ( Lunch / Dinner )</div>
+                            </li>
+                            <li>
+                                <div class="inner-box">Music Concert ( 50% Off )</div>
+                            </li>
+                            <li>
+                                <div class="inner-box">Airport Pick-up</div>
+                            </li>
+                            <li>
+                                <div class="inner-box">Sport Activities</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="ravis-btn btn-type-2" href="#">Select</a>
+                </div>
+            </div>
+            <div class="package-box col-md-4">
+                <div class="main-inner-box" data-bg-img="/WebTemplates/[websiteuserid]/assets/img/packages/3.jpg">
+                    <div class="title-box">
+                        <div class="title">Diamond</div>
+                        <div class="sub-title">Luxury package</div>
+                    </div>
+                    <div class="price-box">
+                        <div class="price">$600</div>
+                        <div class="type">Per Night</div>
+                    </div>
+                    <div class="detail-box">
+                        <ul>
+                            <li>
+                                <div class="inner-box">Flight Ticket</div>
+                            </li>
+                            <li>
+                                <div class="inner-box">Restaurant ( Lunch / Dinner )</div>
+                            </li>
+                            <li>
+                                <div class="inner-box">Music Concert ( Free )</div> 
+                            </li>
+                            <li>
+                                <div class="inner-box">Airport Pick-up</div>
+                            </li>
+                            <li>
+                                <div class="inner-box">Sport Activities ( Free )</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="ravis-btn btn-type-2" href="#">Select</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+<!-- End of Special Offers -->
+<script src="/WebTemplates/[websiteuserid]/assets/js/smit.js" type="text/javascript"></script>

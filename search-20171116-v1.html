@@ -1,0 +1,285 @@
+        <!--Breadcrumb Section-->
+<section id="breadcrumb-section" data-bg-img="/WebTemplates/[websiteuserid]/assets/img/breadcrumb.jpg">
+    <div class="inner-container container">
+        <div class="ravis-title">
+            <div class="inner-box">
+                <div class="title">Search For A Home</div>
+                <div class="sub-title">Some description about your hotel</div>
+            </div>
+        </div>
+        <div class="breadcrumb">
+            <ul class="list-inline">
+                <li><a href="/index.aspx">Home</a></li>
+                <li class="current">Search For A Home</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--End of Breadcrumb Section-->
+<!--Room Section-->
+<section id="rooms-section" class="row-view">
+    <!--Main Booking form-->
+    <section id="main-availability-form">
+        <div class="inner-container container">
+            <div class="l-sec col-md-4">
+                <div class="ravis-title">
+                    <div class="inner-box">
+                        <div class="title">Property Search</div>
+                        <div class="sub-title search-view-options"><span id="viewList">List</span> - <span id="viewGrid">Grid</span> - <span id="mapSearch"><a href="javascript: initialize()">Map</a></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="r-sec col-md-8">
+                <div class="booking-form clearfix form">
+                    <!-- Do Not remove the classes -->
+                    <div class="col-md-8">
+                        <div class="input-daterange row">
+                            <div class="booking-fields col-md-6">
+                                <input name="start" class="datepicker-fields check-in DateFrom" type="text" placeholder="Check in" value="" />
+                                <!-- Date Picker field ( Do Not remove the "datepicker-fields" class ) -->
+                                <i class="fa fa-calendar"></i><!-- Date Picker Icon -->
+                            </div>
+                            <div class="booking-fields col-md-6">
+                                <input name="end" class="datepicker-fields check-out DateTo" type="text" placeholder="Check out" value="" />
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="booking-fields col-md-6">
+                                <!-- Select boxes ( you can change the items and its value based on your project's needs ) -->
+                                <select name="room-type" class="locationID">
+                                    <option value="" />Destination
+                                    <!-- Select box items ( you can change the items and its value based on your project's needs ) -->
+                                    [locationlist]
+                                </select>
+                                <!-- End of Select boxes -->
+                            </div>
+                            <div class="booking-fields col-md-6">
+                                <select name="guest" class="Sleeps">
+                                    <option value="" />Guests
+                                    <option value="1" />1
+                                    <option value="2" />2
+                                    <option value="3" />3
+                                    <option value="4" />4
+                                    <option value="5" />5
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="ravis-btn btn-type-1" onclick="smit()" type="submit">
+                            <span class="inner-box">
+                                Update Search
+                            </span>
+                        </button>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="ravis-btn btn-type-1" id="toggle-adv-filter">
+                            <span class="inner-box">
+                                More Filters
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="advanced-filters">
+                    <div class="booking-fields col-md-4">
+                        <select name="guest" class="Bedrooms">
+                            <option value="" />Bedrooms
+                            <option value="1" />1
+                            <option value="2" />2
+                            <option value="3" />3
+                            <option value="4" />4
+                            <option value="5" />5
+                        </select>
+                    </div>
+                    <div class="booking-fields col-md-4">
+                        <select class="search-query propType" id="propType">
+                            <option />Property Type
+                            <option />Any
+                            <option value="4" />Villa
+                            <option value="2" />Town Home
+                            <option value="1" />Condo
+                            <option value="12" />Studio Apartment
+                            <option value="16" />Resort Home
+                            <option value="14" />Luxury Home
+                        </select>
+                    </div>
+                    <div class="booking-fields col-md-4">
+                        <select class="search-query starrating" id="propType">
+                            <option />Star Rating
+                            <option />Any
+                            <option value="1" />1
+                            <option value="2" />2
+                            <option value="3" />3
+                            <option value="4" />4
+                            <option value="5" />5
+                        </select>
+                    </div>
+
+                    <div class="clearfix"></div>
+                    <div class="booking-fields col-md-4">
+                        <div class="ravis-checkbox">
+                            <label for="Aircon">
+                                <input type="checkbox" name="terms" value="1" class="Aircon" id="Aircon">
+                                <span></span>
+                                Air Conditioning
+                            </label>
+                        </div>
+                    </div>
+                    <div class="booking-fields col-md-4">
+                        <div class="ravis-checkbox">
+                            <label for="clubhouse">
+                                <input type="checkbox" name="terms" value="1" id="clubhouse" class="clubhouse">
+                                <span></span>
+                                Club House
+                            </label>
+                        </div>
+                    </div>
+                    <div class="booking-fields col-md-4">
+                        <div class="ravis-checkbox">
+                            <label for="pool">
+                                <input type="checkbox" name="terms" value="1" id="pool" class="pool">
+                                <span></span>
+                                Community Pool
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                    <div class="booking-fields col-md-4">
+                        <div class="ravis-checkbox">
+                            <label for="freecalls">
+                                <input type="checkbox" name="terms" value="1" id="freecalls" class="freecalls">
+                                <span></span>
+                                Free Calls
+                            </label>
+                        </div>
+                    </div>
+                    <div class="booking-fields col-md-4">
+                        <div class="ravis-checkbox">
+                            <label for="Kitchen">
+                                <input type="checkbox" name="terms" value="1" id="Kitchen" class="Kitchen">
+                                <span></span>
+                                Full Kitchen
+                            </label>
+                        </div>
+                    </div>
+                    <div class="booking-fields col-md-4">
+                        <div class="ravis-checkbox">
+                            <label for="freegas">
+                                <input type="checkbox" name="terms" value="1" id="freegas" class="freegas">
+                                <span></span>
+                                Gas Free
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                    <div class="booking-fields col-md-4">
+                        <div class="ravis-checkbox">
+                            <label for="bbq">
+                                <input type="checkbox" name="terms" value="1" id="bbq" class="bbq">
+                                <span></span>
+                                Grill
+                            </label>
+                        </div>
+                    </div>
+                    <div class="booking-fields col-md-4">
+                        <div class="ravis-checkbox">
+                            <label for="laundry">
+                                <input type="checkbox" name="terms" value="1" id="laundry" class="laundry">
+                                <span></span>
+                                Laundry In Unit
+                            </label>
+                        </div>
+                    </div>
+                    <div class="booking-fields col-md-4">
+                        <div class="ravis-checkbox">
+                            <label for="petfriendly">
+                                <input type="checkbox" name="terms" value="1" id="petfriendly" class="petfriendly">
+                                <span></span>
+                                Pets Allowed
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                    <div class="booking-fields col-md-4">
+                        <div class="ravis-checkbox">
+                            <label for="terms-condition">
+                                <input type="checkbox" name="terms" value="1" id="heatedpool" class="heatedpool">
+                                <span></span>
+                                Private Pool
+                            </label>
+                        </div>
+                    </div>
+                    <div class="booking-fields col-md-4">
+                        <div class="ravis-checkbox">
+                            <label for="terms-condition">
+                                <input type="checkbox" name="terms" value="1" id="spa" class="spa">
+                                <span></span>
+                                Spa
+                            </label>
+                        </div>
+                    </div>
+                    <div class="booking-fields col-md-4">
+                        <div class="ravis-checkbox">
+                            <label for="terms-condition">
+                                <input type="checkbox" name="terms" value="1" id="wifi" class="wifi">
+                                <span></span>
+                                Wi-Fi
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                    <div class="booking-fields col-md-4">
+                        <div class="ravis-checkbox">
+                            <label for="terms-condition">
+                                <input type="checkbox" name="terms" value="1" id="conservationview" class="conservationview">
+                                <span></span>
+                                Conservation View
+                            </label>
+                        </div>
+                    </div>
+                    <div class="booking-fields col-md-4">
+                        <div class="ravis-checkbox">
+                            <label for="terms-condition">
+                                <input type="checkbox" name="terms" value="1" id="waterview" class="waterview">
+                                <span></span>
+                                Water View
+                            </label>
+                        </div>
+                    </div>
+                    <div class="booking-fields col-md-4">
+                        <div class="ravis-checkbox">
+                            <label for="terms-condition">
+                                <input type="checkbox" name="terms" value="1" id="privacyfence" class="privacyfence">
+                                <span></span>
+                                Privacy Fence
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="inner-container container">
+        <div id="propertyResultsConatiner" class="room-container clearfix">
+        </div>
+    </div>
+    <div class="pagination-box">
+
+
+        <ul class="list-inline">
+            <li ></li>
+           
+        </ul>
+    </div>
+</section>
+<!--End of Room Section-->
+<script type="text/javascript" src="/WebTemplates/[websiteuserid]/assets/js/smit.js"></script>
+<script type="text/javascript" src="/WebTemplates/[websiteuserid]/assets/js/searchPage.js"></script>
+<script type="text/javascript" src="/WebTemplates/[websiteuserid]/assets/js/populateFilterControl.js"></script>
